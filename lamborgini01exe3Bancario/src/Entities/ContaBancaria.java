@@ -39,5 +39,11 @@ public abstract class ContaBancaria {
         System.out.printf("Titular: %s\nNumeroConta: %d\nSaldo: %.2f", titular, numeroConta, saldo);
     }
 
+    public void depositar(double valor){
+        this.saldo+= valor;
+    }
+
+    public abstract void sacar(double valor);
+
 
 }
